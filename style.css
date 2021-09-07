@@ -32,13 +32,26 @@ a {
 }
 
 .top_pane {
+	display: block;
 	width: 100%;
 	height: 100px;
 	border-bottom: 1px solid;
 	border-color: rgba(166, 175, 175, 0.767);
 	background-color: rgb(41, 48, 48);
-	display: flex;
+	
 	color: white;
+}
+
+.top_left_pane{
+	float: left;
+	margin-top: 15px;
+}
+
+.top_right_pane{
+	float:right;
+	margin-top: 25px;
+	margin-right: 20px;
+	text-align: right;
 }
 
 .main_menu_item{
@@ -119,7 +132,8 @@ a {
 	box-shadow: 0 0 15px #ffbf59;
 	display: flex;
 	align-items: center;
-	justify-content: left; 
+	justify-content: center; 
+	font-size: 30px;
 }
 
 .display_stations{
@@ -129,17 +143,38 @@ a {
 
 
 .login_layout{
+	display:block;
 	width: 100%;
 	height: 100%;
-	
 	background-color: rgb(69, 75, 75);
 }
 
-.login_form{
+.login_logo{
+	height: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login_page{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	padding-left: auto;
 	padding-right: auto;
 	background-color: #30302f;
   	border-radius: 5px;
 	color: white;
 }
+
+.login_form{
+	display: block;
+	
+	padding-left: auto;
+	padding-right: auto;
+	background-color: #30302f;
+  	border-radius: 5px;
+	color: white;
+}
+
 
