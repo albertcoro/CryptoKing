@@ -14,19 +14,16 @@
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       $count = mysqli_num_rows($result);
-	  $hash = $row["psswd_en"];
+	  $password = $row["psswd_en"];
       
       // If result matched $myusername and $mypassword, table row must be 1 row
 		
-      if($hashNew == $hash) {
+      if($password == $mypassword) {
 		$_SESSION['login_user'] = $myusername;
         header("location: home.php");
       }else {
          $error = "Your Login Name or Password is invalid";
 		 echo '<script>alert("Incorrect Username or Password")</script>';
-		 echo $hash;
-		 echo '<br>';
-		 echo $hashNew;
       }
    }
 ?>

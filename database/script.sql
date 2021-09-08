@@ -10,7 +10,6 @@ Create table UserClient (
     psswd_en varchar(90) not null,
     email_adress varchar(50) not null,
     creation_date date not null,
-    crypt_key varchar(20),
     Primary Key(id)
 );
 
@@ -20,18 +19,12 @@ Insert into UserClient(fullname, nickname,psswd_en,email_adress,creation_date) V
 Insert into UserClient(fullname, nickname,psswd_en,email_adress,creation_date) Values ("Drake Fly","DFly","DrakeDrake123","dfly@gmail.com",current_date());
 Insert into UserClient(fullname, nickname,psswd_en,email_adress,creation_date) Values ("Byron Great","Bgreat","ByronGreat123","bgreat@gmail.com",current_date());
 Insert into UserClient(fullname, nickname,psswd_en,email_adress,creation_date) Values ("Kumo Nikitai","KuKi","Kukilord123","kukilord@gmail.com",current_date());
-update userclient set psswd_en="$2y$10$IePSPdwvOKy1yeVqL0EWmuWpiVtzn/AQF8nTBZgJZm4Ra1X82ds92" where id=1;
-update userclient set psswd_en="$2y$10$7BLjs64nYS8Xt9uImfypZOkZtSoBO5EOZXYDONR9QXimpt7whokVG" where id=2;
-update userclient set psswd_en="$2y$10$4Z7pGclJJ2ZvWRw9L2Y2renR94ASqWDRXjwP3qUBXwwaNoZWQDn3a" where id=3;
-update userclient set psswd_en="$2y$10$WAlims2CwhzbrbIM7WfvYueOeQeT0GDnANsPRqNv9jQs9B6Ep4Cgq" where id=4;
-update userclient set psswd_en="$2y$10$LCDq/awc8kZeHG/5y9SdKunTZ.fMLw/Uvd1tjMu.FkYzaAfqRkfPq" where id=5;
-update userclient set psswd_en="$2y$10$KG9IomYn/aFarINN2Ym3CuuG5it15sW.LmClx8isQYdAofA8RtZ7y" where id=6;
-update userclient set crypt_key="IAiEgIjeEJfCDtnqVgFP" where id=1;
-update userclient set crypt_key="dWnzUdlFqtuQZisIILAs" where id=2;
-update userclient set crypt_key="BSXLQMaRAXoQcaTFCWOi" where id=3;
-update userclient set crypt_key="JYnxezFBydgLyUFYInbv" where id=4;
-update userclient set crypt_key="wuDRaGAMbwPYfamYGtVH" where id=5;
-update userclient set crypt_key="MhKOFDgQXJZlxxrUpzse" where id=6;
+update userclient set psswd_en="KingKing123" where id=1;
+update userclient set psswd_en="GoldGold222" where id=2;
+update userclient set psswd_en="RichRich244" where id=3;
+update userclient set psswd_en="DrakeDrake123" where id=4;
+update userclient set psswd_en="ByronGreat123" where id=5;
+update userclient set psswd_en="Kukilord123" where id=6;
 Select * from UserClient;
 
 Drop table if exists Configuration;
