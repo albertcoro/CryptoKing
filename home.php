@@ -1,5 +1,7 @@
 <?php
    include('session.php');
+   include('cryptos.php');
+   
 ?>
 <html>
 	<head>
@@ -17,7 +19,7 @@
 			<div class="top_right_pane">
 				<text>
 					Welcome, <?php echo $login_session; ?> <br>
-					Your balance: <?php echo $wallet_bal; ?>
+					Your balance: <?php echo $wallet_bal; ?> $
 				</text>
 			</div>
 		</div>
@@ -74,6 +76,15 @@
 		<div class="middle_pane">
 			<div class="main_item_display">
 				<text> Trending Cryptos </text>
+			</div>
+			<div class="display_station">
+				<div>1</div>
+			</div>
+			<div class="display_station">
+				<div>2</div>
+			</div>
+			<div class="display_station">
+				<div>3</div>
 			</div>
 		</div>
 	</body>

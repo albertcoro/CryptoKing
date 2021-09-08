@@ -17,7 +17,7 @@
 			<div class="top_right_pane">
 				<text>
 					Welcome, <?php echo $login_session; ?> <br>
-					Your balance: <?php echo $wallet_bal; ?>
+					Your balance: <?php echo $wallet_bal; ?> $
 				</text>
 			</div>
 		</div>
