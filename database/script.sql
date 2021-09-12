@@ -122,12 +122,12 @@ Create table Wallet(
     Foreign key (user_id) References UserClient(id)
 );
 
-Insert into Wallet(user_id,current_balance) Values (1,0);
-Insert into Wallet(user_id,current_balance) Values (2,0);
-Insert into Wallet(user_id,current_balance) Values (3,0);
-Insert into Wallet(user_id,current_balance) Values (4,0);
-Insert into Wallet(user_id,current_balance) Values (5,0);
-Insert into Wallet(user_id,current_balance) Values (6,0);
+Insert into Wallet(user_id,current_balance) Values (1,24.52);
+Insert into Wallet(user_id,current_balance) Values (2,988.20);
+Insert into Wallet(user_id,current_balance) Values (3,7.12);
+Insert into Wallet(user_id,current_balance) Values (4,9.88);
+Insert into Wallet(user_id,current_balance) Values (5,84.20);
+Insert into Wallet(user_id,current_balance) Values (6,70.55);
 
 Drop table if exists WalletHistory;
 Create table WalletHistory(
