@@ -25,7 +25,6 @@ update userclient set psswd_en="RichRich244" where id=3;
 update userclient set psswd_en="DrakeDrake123" where id=4;
 update userclient set psswd_en="ByronGreat123" where id=5;
 update userclient set psswd_en="Kukilord123" where id=6;
-Select * from UserClient;
 
 Drop table if exists Configuration;
 Create table Configuration(
@@ -163,12 +162,18 @@ Create table Crypto(
     Primary Key (id)
 );
 
-Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("BTC","Bitcoin",40350.90,'2021-08-21 21:00:00');
-Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("ETH","Ethereum",3270.29,'2021-08-21 21:00:00');
-Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("DOGE","Dogecoin",0.2784,'2021-08-21 21:00:00');
-Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("USDC","USD Coin",0.9996,'2021-08-21 21:00:00');
-Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("LTC","Litecoin",180.54,'2021-08-21 21:00:00');
-Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("BNB","Binance Coin",402.82,'2021-08-21 21:00:00');
+Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("BTC","Bitcoin",40350.90,'2021-07-03 21:00:02');
+Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("ETH","Ethereum",3270.29,'2021-06-21 11:02:00');
+Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("DOGE","Dogecoin",0.2784,'2021-07-18 01:00:30');
+Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("USDC","USD Coin",0.9996,'2021-08-02 21:20:20');
+Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("LTC","Litecoin",180.54,'2021-07-11 21:34:40');
+Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("ADA","Cardano",2.50,'2021-10-10 11:52:11');
+Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("BNB","Binance Coin",402.82,'2021-07-21 21:56:20');
+Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("USDT","Tether",1.00,'2021-09-02 11:52:12');
+Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("XRP","XRP",1.12,'2021-07-21 21:56:20');
+Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("SOL","Solana",158.10,'2021-07-21 21:56:20');
+Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("DOT","Polkadot",36.69,'2021-07-21 21:56:20');
+Insert into Crypto(abreviated_name,fullname,current_price,last_update) Values ("LUNA","Terra",36.52,'2021-07-21 21:56:20');
 
 Drop table if exists CryptoHistory;
 Create table CryptoHistory(
@@ -184,27 +189,51 @@ Create table CryptoHistory(
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (1,40350.90,-11.2,'2021-08-21 21:00:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (1,45440.22,7.0687,'2021-08-21 20:30:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (1,42440.22,4.9455,'2021-08-21 20:00:00');
-Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (1,40440.22,100,'2021-08-21 19:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (1,40440.22,2.55,'2021-08-21 19:30:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (2,3270.29,-2.9671,'2021-08-21 21:00:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (2,3370.29,6.3085,'2021-08-21 20:30:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (2,3170.29,-8.6448,'2021-08-21 20:00:00');
-Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (2,3470.29,100,'2021-08-21 19:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (2,3470.29,3.1,'2021-08-21 19:30:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (3,0.2784,7.0706,'2021-08-21 21:00:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (3,0.26,6.5573,'2021-08-21 20:30:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (3,0.244,48.9966,'2021-08-21 20:00:00');
-Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (3,0.4784,100,'2021-08-21 19:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (3,0.4784,1.2,'2021-08-21 19:30:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (4,0.9996,11.0666,'2021-08-21 21:00:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (4,0.9,5.8823,'2021-08-21 20:30:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (4,0.85,-1.1627,'2021-08-21 20:00:00');
-Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (4,0.86,100,'2021-08-21 19:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (4,0.86,1.55,'2021-08-21 19:30:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (5,180.54,0.3557,'2021-08-21 21:00:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (5,179.9,0.2787,'2021-08-21 20:30:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (5,179.4,0,'2021-08-21 20:00:00');
-Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (5,179.4,100,'2021-08-21 19:30:00');
-Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (6,402.82,0.0795,'2021-08-21 21:00:00');
-Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (6,402.5,0,'2021-08-21 20:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (5,179.4,4.8,'2021-08-21 19:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (6,402.82,1.8,'2021-08-21 21:00:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (6,402.5,0.88,'2021-08-21 20:30:00');
 Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (6,402.5,0.625,'2021-08-21 20:00:00');
-Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (6,400,100,'2021-08-21 19:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (6,400,1.1,'2021-08-21 19:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (7,402.82,0.1,'2021-08-21 21:00:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (7,402.5,0.12,'2021-08-21 20:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (7,402.5,0.625,'2021-08-21 20:00:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (7,400,0.2,'2021-08-21 19:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (8,402.82,2.95,'2021-08-21 21:00:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (8,402.5,0.22,'2021-08-21 20:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (8,402.5,0.625,'2021-08-21 20:00:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (8,400,0.15,'2021-08-21 19:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (9,402.82,1.1,'2021-08-21 21:00:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (9,402.5,0,'2021-08-21 20:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (9,402.5,0.625,'2021-08-21 20:00:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (9,400,0.15,'2021-08-21 19:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (10,402.82,5.21,'2021-08-21 21:00:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (10,402.5,0,'2021-08-21 20:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (10,402.5,0.625,'2021-08-21 20:00:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (10,400,0.00155,'2021-08-21 19:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (11,402.82,2.335,'2021-08-21 21:00:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (11,402.5,8.1,'2021-08-21 20:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (11,402.5,0.25,'2021-08-21 20:00:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (11,400,0.15,'2021-08-21 19:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (12,402.82,0.1,'2021-08-21 21:00:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (12,402.5,0.25,'2021-08-21 20:30:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (12,402.5,-0.01,'2021-08-21 20:00:00');
+Insert into CryptoHistory(crypto_id,price,difference,update_date) Values (12,400,0.2,'2021-08-21 19:30:00');
 
 Drop table if exists CryptoPartition;
 Create table CryptoPartition(

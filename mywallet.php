@@ -1,5 +1,5 @@
 <?php
-   include('session.php');
+   include('sessionSQL.php');
 ?>
 <html>
 	<head>

@@ -1,8 +1,6 @@
 <?php
-   include('session.php');
-   include('upwardcryptos.php');
-   include('downwardcryptos.php');
-   include('neutralcryptos.php');
+   include('sessionSQL.php');
+   include('tradersSQL.php');
 ?>
 <html>
 	<head>
@@ -26,7 +24,7 @@
 		</div>
 		<div class="left_pane">
 			<a href="home.php">
-				<div class="main_menu_item main_menu_item_selected">
+				<div class="main_menu_item">
 					<img class="icon" src="media/icons/home.png"/>
 					<text> Home </text>
 				</div>
@@ -38,7 +36,7 @@
 				</div>
 			</a>
 			<a href="traders.php">
-				<div class="main_menu_item">
+				<div class="main_menu_item main_menu_item_selected">
 					<img class="icon" src="media/icons/trader.png"/>
 					<text> Traders </text>
 				</div>
@@ -76,153 +74,17 @@
 		</div>
 		<div class="middle_pane">
 			<div class="display_holder">
-				<div class="station_title"> Upward Trending Cryptos </div>
+				<div class="station_title"> Traders </div>
 			</div>
 			<div class="display_holder">
-				<div class="display_station">
-					<div class="display_title">
-						<?php 
-							echo $up_crypto_full[0]." (".$up_crypto_abrev[0].")"; 
-						?>
-					</div>
-					<div class="display_diff_up">
-						<img class="trend_icons" src="./media/icons/trendup.png">
-						<?php 
-							echo $up_crypto_diff[0]."%";
-						?>
-					</div>
-				</div>
-				<div class="display_station">
-					<div class="display_title">
-						<?php 
-							echo $up_crypto_full[1]." (".$up_crypto_abrev[1].")"; 
-						?>
-					</div>
-					<div class="display_diff_up">
-						<img class="trend_icons" src="./media/icons/trendup.png">
-						<?php 
-							echo $up_crypto_diff[1]."%";
-						?>
-					</div>
-				</div>
-				<div class="display_station">
-					<div class="display_title">
-						<?php 
-							echo $up_crypto_full[2]." (".$up_crypto_abrev[2].")"; 
-						?>
-					</div>
-					<div class="display_diff_up">
-						<img class="trend_icons" src="./media/icons/trendup.png">
-						<?php 
-							echo $up_crypto_diff[2]."%";
-						?>
-					</div>
+				<div class="table_selection"> 
+					
 				</div>
 			</div>
 			<div class="display_holder">
-				<div class="station_title"> Downward Trending Cryptos </div>
-			</div>
-			<div class="display_holder">
-				<div class="display_station">
-					<div class="display_title">
-						<?php 
-							echo $down_crypto_full[0]." (".$down_crypto_abrev[0].")"; 
-						?>
-					</div>
-					<div class="display_diff_down">
-						<img class="trend_icons" src="./media/icons/trenddown.png">
-						<?php 
-							echo $down_crypto_diff[0]."%";
-						?>
-					</div>
-				</div>
-				<div class="display_station">
-					<div class="display_title">
-						<?php 
-							echo $down_crypto_full[1]." (".$down_crypto_abrev[1].")"; 
-						?>
-					</div>
-					<div class="display_diff_down">
-						<img class="trend_icons" src="./media/icons/trenddown.png">
-						<?php 
-							echo $down_crypto_diff[1]."%";
-						?>
-					</div>
-				</div>
-				<div class="display_station">
-					<div class="display_title">
-						<?php 
-							echo $down_crypto_full[2]." (".$down_crypto_abrev[2].")"; 
-						?>
-					</div>
-					<div class="display_diff_down">
-						<img class="trend_icons" src="./media/icons/trenddown.png">
-						<?php 
-							echo $down_crypto_diff[2]."%";
-						?>
-					</div>
-				</div>
-			</div>
-			<div class="display_holder">
-				<div class="station_title"> Neutral Trending Cryptos </div>
-			</div>
-			<div class="display_holder">
-				<div class="display_station">
-					<div class="display_title">
-						<?php 
-							echo $neu_crypto_full[0]." (".$neu_crypto_abrev[0].")"; 
-						?>
-					</div>
-					<div class="display_diff_neu">
-						<img class="trend_icons" src="./media/icons/trendneutral.png">
-						<?php 
-							echo $neu_crypto_diff[0]."%";
-						?>
-					</div>
-				</div>
-				<div class="display_station">
-					<div class="display_title">
-						<?php 
-							echo $neu_crypto_full[1]." (".$neu_crypto_abrev[1].")"; 
-						?>
-					</div>
-					<div class="display_diff_neu">
-						<img class="trend_icons" src="./media/icons/trendneutral.png">
-						<?php 
-							echo $neu_crypto_diff[1]."%";
-						?>
-					</div>
-				</div>
-				<div class="display_station">
-					<div class="display_title">
-						<?php 
-							echo $neu_crypto_full[2]." (".$neu_crypto_abrev[2].")"; 
-						?>
-					</div>
-					<div class="display_diff_neu">
-						<img class="trend_icons" src="./media/icons/trendneutral.png">
-						<?php 
-							echo $neu_crypto_diff[2]."%";
-						?>
-					</div>
-				</div>
-			</div>
-			<div class="display_holder">
-				<div class="station_title"> What do i do? </div>
-			</div>
-			<div class="display_holder">
-				<div class="display_zone">
-					<div class="display_info">
-						Keep track of famous cryptos in the <a href="./home.php">Home</a> Tab. <br>
-						Find new Cryptos and new oportunities in the <a href="./market.php">Market</a> Tab. <br>
-						The <a href="./traders.php">Traders</a> Tab will allow you to look at other traders in this platform. <br>
-						Make sure to check the <a href="./traders.php">Wallet</a> tab, to look at your earnings, incomes and expenses <br>
-						To keep track of your past financial transactions, head over to the <a href="./traders.php">Transactions</a> tab. <br>
-						Keep track of your positions and your investments in the <a href="./myinventory.php">Inventory</a> Tab. <br>
-						Remember that you can customize your experience at the <a href="./configuration.php">Configuration</a> Tab. <br>
-						If you have any doubts or any feedback about the platform contact us at <a href="mailto:info@cryptoking.com">info@cryptoking.com</a><br>
-					</div>
-				</div>
+				<?php
+					echo $table;
+				?>
 			</div>
 		</div>
 	</body>

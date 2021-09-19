@@ -160,6 +160,12 @@ a {
 	height: 30px;
 }
 
+.mini_trend_icons{
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
 .station_title{
 	font-size: 30px;
 	color: white;
@@ -197,6 +203,19 @@ a {
 	text-align: center;
 	font-size: 25px;
 	line-height:1.4;
+}
+
+.display_table th{
+	cursor: pointer;
+	font-weight: unset;
+}
+
+.display_table{
+	width: 100%;
+	text-align: center;
+	font-size: 25px;
+	border-spacing: 0 14px;
+	margin-bottom: 8px;
 }
 
 .login_layout{

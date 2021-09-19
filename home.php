@@ -1,8 +1,6 @@
 <?php
-   include('session.php');
-   include('upwardcryptos.php');
-   include('downwardcryptos.php');
-   include('neutralcryptos.php');
+   include('sessionSQL.php');
+   include('trendingcryptosSQL.php');
 ?>
 <html>
 	<head>
@@ -216,7 +214,7 @@
 						Keep track of famous cryptos in the <a href="./home.php">Home</a> Tab. <br>
 						Find new Cryptos and new oportunities in the <a href="./market.php">Market</a> Tab. <br>
 						The <a href="./traders.php">Traders</a> Tab will allow you to look at other traders in this platform. <br>
-						Make sure to check the <a href="./traders.php">Wallet</a> tab, to look at your earnings, incomes and expenses <br>
+						Make sure to check the <a href="./traders.php">Wallet</a> tab, to look at your earnings, incomes and expenses. <br>
 						To keep track of your past financial transactions, head over to the <a href="./traders.php">Transactions</a> tab. <br>
 						Keep track of your positions and your investments in the <a href="./myinventory.php">Inventory</a> Tab. <br>
 						Remember that you can customize your experience at the <a href="./configuration.php">Configuration</a> Tab. <br>
