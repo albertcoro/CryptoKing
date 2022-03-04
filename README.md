@@ -33,7 +33,7 @@ Unix PHP tutorial: https://www.youtube.com/watch?v=Q0ZyQlgukxc
 <h3>I've got some trouble installing the project or some questions about the project, where should I contact you?</h3>
 Feel free to leave a comment or to PM either here on Github or on my private email albertcorominasmariscot@gmail.com.
 
-<h3>Any screenshots of the project?<h3>
+<h3>Any screenshots of the project?</h3>
 Yes, certenly. If you want more screenshots you can find more of them in the /screenshot directory in this same repository.
 
 ![Screenshot_20220202_182030](https://user-images.githubusercontent.com/38464645/156771899-e2a53266-eaf4-42a8-8587-f2f0db246f7e.png)
