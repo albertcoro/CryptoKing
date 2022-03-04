@@ -30,7 +30,7 @@ Using Unix PHP is much simpler you just need to execute php -S localhost:port, i
 Xampp tutorial: https://www.youtube.com/watch?v=-f8N4FEQWyY
 Unix PHP tutorial: https://www.youtube.com/watch?v=Q0ZyQlgukxc
 
-<h3>I've got some trouble installing the project or some questions about the project, where should I contact you?<h3>
+<h3>I've got some trouble installing the project or some questions about the project, where should I contact you?</h3>
 Feel free to leave a comment or to PM either here on Github or on my private email albertcorominasmariscot@gmail.com.
 
 <h3>Any screenshots of the project?<h3>
